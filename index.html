@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بلدي | مطعم مأكولات مصرية</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F1E8;--teal:#0F4C5C;--ink:#1C2B30;--muted:#5f6f73;--gold:#E9B44C;--line:#b9b49f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Tajawal,Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8}
+.top{background:var(--teal);color:#fff;padding:60px 20px 46px;text-align:center;border-bottom:8px solid var(--gold)}
+.top h1{font-size:3.4rem;font-weight:800}
+.top p{color:#cfe3e8;font-size:1.15rem;margin-top:4px}
+.badge{display:inline-block;background:var(--gold);color:var(--ink);padding:4px 18px;border-radius:30px;margin-top:16px;font-weight:500}
+.wrap{max-width:920px;margin:0 auto;padding:40px 20px}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:10px 56px}
+.cat{margin-bottom:22px}
+.cat h2{font-size:1.5rem;color:var(--teal);border-bottom:3px solid var(--gold);display:inline-block;margin-bottom:12px}
+.item{display:flex;align-items:baseline;gap:8px;padding:5px 0}
+.item b{font-weight:500}
+.item small{display:block;color:var(--muted);font-size:.88rem}
+.dots{flex:1;border-bottom:2px dotted var(--line);transform:translateY(-4px)}
+.price{font-weight:800;color:var(--teal);white-space:nowrap}
+.info{background:var(--teal);color:#fff;border-radius:14px;padding:30px;margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
+.info h3{color:var(--gold);margin-bottom:4px}
+.info p{color:#dbeaee}
+footer{text-align:center;color:var(--muted);padding:24px;font-size:.9rem}
+@media(max-width:700px){.menu,.info{grid-template-columns:1fr}.top h1{font-size:2.6rem}}
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>بلدي</h1>
+  <p>أكل مصري زي بيت الجدة</p>
+  <span class="badge">مفتوح كل يوم</span>
+</header>
+
+<main class="wrap">
+  <div class="menu">
+    <div>
+      <section class="cat">
+        <h2>الشوربة والسلطات</h2>
+        <div class="item"><b>شوربة عدس</b><span class="dots"></span><span class="price">25 ج</span></div>
+        <div class="item"><b>شوربة لسان عصفور</b><span class="dots"></span><span class="price">30 ج</span></div>
+        <div class="item"><b>سلطة خضراء</b><span class="dots"></span><span class="price">25 ج</span></div>
+        <div class="item"><b>طحينة وبابا غنوج</b><span class="dots"></span><span class="price">30 ج</span></div>
+      </section>
+      <section class="cat">
+        <h2>المشويات</h2>
+        <div class="item"><div><b>كباب</b><small>نص كيلو مع الأرز والسلطة</small></div><span class="dots"></span><span class="price">320 ج</span></div>
+        <div class="item"><div><b>كفتة</b><small>نص كيلو مع الأرز والسلطة</small></div><span class="dots"></span><span class="price">280 ج</span></div>
+        <div class="item"><div><b>ربع فراخ مشوية</b><small>مع الأرز والسلطة</small></div><span class="dots"></span><span class="price">120 ج</span></div>
+        <div class="item"><b>حمام مشوي</b><span class="dots"></span><span class="price">150 ج</span></div>
+        <div class="item"><div><b>ريش ضاني</b><small>نص كيلو مع الأرز والسلطة</small></div><span class="dots"></span><span class="price">380 ج</span></div>
+      </section>
+      <section class="cat">
+        <h2>الأطباق الشعبية</h2>
+        <div class="item"><b>كشري</b><span class="dots"></span><span class="price">45 ج</span></div>
+        <div class="item"><b>فول بالزيت الحار</b><span class="dots"></span><span class="price">25 ج</span></div>
+        <div class="item"><b>طعمية</b><span class="dots"></span><span class="price">20 ج</span></div>
+        <div class="item"><b>فتة بالسمنة</b><span class="dots"></span><span class="price">140 ج</span></div>
+        <div class="item"><b>حواوشي</b><span class="dots"></span><span class="price">60 ج</span></div>
+        <div class="item"><b>كبدة إسكندراني</b><span class="dots"></span><span class="price">70 ج</span></div>
+      </section>
+    </div>
+    <div>
+      <section class="cat">
+        <h2>الأطباق الرئيسية</h2>
+        <div class="item"><div><b>ملوخية بالفراخ</b><small>مع الأرز</small></div><span class="dots"></span><span class="price">110 ج</span></div>
+        <div class="item"><b>محشي مشكل</b><span class="dots"></span><span class="price">95 ج</span></div>
+        <div class="item"><b>رقاق باللحمة</b><span class="dots"></span><span class="price">130 ج</span></div>
+        <div class="item"><b>صينية بطاطس بالفراخ</b><span class="dots"></span><span class="price">125 ج</span></div>
+        <div class="item"><b>مكرونة بشاميل</b><span class="dots"></span><span class="price">90 ج</span></div>
+        <div class="item"><b>ورق عنب</b><span class="dots"></span><span class="price">100 ج</span></div>
+        <div class="item"><b>بامية باللحمة</b><span class="dots"></span><span class="price">120 ج</span></div>
+      </section>
+      <section class="cat">
+        <h2>الحلويات</h2>
+        <div class="item"><b>أم علي</b><span class="dots"></span><span class="price">60 ج</span></div>
+        <div class="item"><b>رز بلبن</b><span class="dots"></span><span class="price">35 ج</span></div>
+        <div class="item"><b>كنافة بالقشطة</b><span class="dots"></span><span class="price">65 ج</span></div>
+        <div class="item"><b>بسبوسة</b><span class="dots"></span><span class="price">40 ج</span></div>
+        <div class="item"><b>مهلبية</b><span class="dots"></span><span class="price">30 ج</span></div>
+      </section>
+      <section class="cat">
+        <h2>المشروبات</h2>
+        <div class="item"><b>شاي بالنعناع</b><span class="dots"></span><span class="price">20 ج</span></div>
+        <div class="item"><b>عصير قصب</b><span class="dots"></span><span class="price">30 ج</span></div>
+        <div class="item"><b>كركديه</b><span class="dots"></span><span class="price">25 ج</span></div>
+        <div class="item"><b>سوبيا</b><span class="dots"></span><span class="price">25 ج</span></div>
+        <div class="item"><b>تمر هندي</b><span class="dots"></span><span class="price">25 ج</span></div>
+        <div class="item"><b>عصير مانجو</b><span class="dots"></span><span class="price">40 ج</span></div>
+      </section>
+    </div>
+  </div>
+
+  <section class="info">
+    <div><h3>العنوان</h3><p>شارع الجامعة، المنصورة</p></div>
+    <div><h3>ساعات العمل</h3><p>من 11 صباحا إلى 12 مساء</p></div>
+    <div><h3>للحجز</h3><p>010000500600</p></div>
+  </section>
+</main>
+
+<footer>قايمة تجريبية من تصميمي ضمن مشاريع التدريب</footer>
+</body>
+</html>
